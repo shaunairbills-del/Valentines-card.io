@@ -1,1 +1,1 @@
-https://giksaw.github.io/valentines2026/
+this is a fan edit from giksaw's valentine's card. All credits to him
