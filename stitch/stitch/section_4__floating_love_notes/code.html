@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reasons I Love You | Valentine's Tribute</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ee2b4b",
+              "background-light": "#f8f6f6",
+              "background-dark": "#221013",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .bokeh {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 1;
+        }
+        .glass-card {
+            background: rgba(238, 43, 75, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-15px) rotateX(5deg) rotateY(5deg);
+            background: rgba(238, 43, 75, 0.15);
+            border-color: rgba(238, 43, 75, 0.4);
+            box-shadow: 0 20px 40px rgba(238, 43, 75, 0.2);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(238, 43, 75, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-white min-h-screen relative overflow-hidden">
+<!-- Background Elements -->
+<div class="fixed inset-0 pointer-events-none">
+<div class="bokeh bg-primary/20 w-96 h-96 top-[-10%] left-[-10%]"></div>
+<div class="bokeh bg-primary/10 w-[500px] h-[500px] bottom-[-20%] right-[-5%]"></div>
+<div class="bokeh bg-primary/15 w-64 h-64 top-[40%] right-[10%]"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark via-transparent to-background-dark opacity-80"></div>
+</div>
+<!-- Main Content Section -->
+<main class="relative z-10 container mx-auto px-6 py-20 flex flex-col items-center justify-center min-h-screen">
+<!-- Header Section -->
+<header class="text-center mb-16 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-6">
+<span class="material-icons text-sm">favorite</span>
+<span class="text-xs font-bold uppercase tracking-widest">Section 04</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 dark:text-white">
+                Reasons I <span class="text-primary text-glow italic">Love</span> You
+            </h1>
+<p class="text-slate-400 text-lg md:text-xl font-light leading-relaxed">
+                A few of the infinite reasons why my world is brighter with you in it.
+            </p>
+</header>
+<!-- Floating Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+<!-- Card 1 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">auto_awesome</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">You are my peace</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">In the middle of every storm, you are the calm that guides me home.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center mt-0 lg:mt-12">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">sentiment_very_satisfied</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">That Smile</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">Your smile makes my worst days better and my best days unforgettable.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">favorite_border</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Your Heart</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">The way you listen with your heart and care for everyone around you.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center mt-0 lg:-mt-6">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">volunteer_activism</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Pure Kindness</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">Your kindness is my favorite thing about you; it's a light in this world.</p>
+</div>
+<!-- Card 5 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center mt-0 lg:mt-6">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">cottage</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Feeling Like Home</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">How you make every house feel like a home just by being in it.</p>
+</div>
+<!-- Card 6 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer h-64 justify-center mt-0 lg:-mt-12">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary">music_note</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Your Laugh</h3>
+<p class="text-slate-400 group-hover:text-slate-200 transition-colors">Your laugh is my favorite song. I could listen to it on repeat forever.</p>
+</div>
+</div>
+<!-- Scroll Indicator / Navigation -->
+<div class="mt-24 flex flex-col items-center gap-4">
+<button class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/40 hover:scale-110 transition-transform active:scale-95 group">
+<span class="material-icons group-hover:animate-bounce">keyboard_arrow_down</span>
+</button>
+<span class="text-xs font-bold uppercase tracking-[0.3em] text-primary/60">Continue Scrolling</span>
+</div>
+</main>
+<!-- Floating Decor Elements -->
+<div class="fixed top-1/4 left-10 opacity-20 hidden xl:block">
+<img class="w-32 h-32 object-cover rounded-full rotate-12" data-alt="Soft red rose petals background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHmdMxhyJYvwHqfYpn6tRHAanA8xbIXXQz4zMwPlcOUMUb4FYEu7MVebjA3tcQBk9OfhDxabtvKMZ0nIyqWfvkrY74ZHmX1JbvVcjvVjWbJW9tPOJKBZvabXCkzxnMnVED8zN-QFjGKQEP2PP2Iru8xNuAlTPJTa6J6ST454acrpTGBCCOWAKpFvMrZGk3WShVgqm-E7-YG2DJZUgQmqWndJ2AvE8KLDTNjw-BKQXc2hWJnm5Whbmcitmo4d02K9MTasKmYo2pY7FK"/>
+</div>
+<div class="fixed bottom-1/4 right-10 opacity-20 hidden xl:block">
+<img class="w-40 h-40 object-cover rounded-full -rotate-12" data-alt="Abstract pink bokeh light pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4-GVeXYjd288iXw5lWN17Pck-JVdFnWFHwRjD-jKTLIWX5tPIdUy9boeMd4K9tXU4weU53Ek6qc0zi1gODHOtZFtkJdKpFSe2pxj6eIb85LmzI6VrZs9dKKylhlN_-khLGZVusldQeJ97gDouFKY8Gtvt6KXSgimbxBHvwR0o07GoZBG8ZMJ_77YWUgP8VFtt3o-PB7C0Z37ildmMBRNxF5jv_0l8KP_u-FXUp5iLUPVirHbm3Vd6ynqQafPIQDNf3YQdZyD-bDTM"/>
+</div>
+</body></html>

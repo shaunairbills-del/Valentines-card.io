@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Final: The Valentine Proposal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b4b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221013",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'vignette': 'radial-gradient(circle, transparent 20%, #1a080a 100%)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>body {
+    background-color: #221013;
+    margin: 0;
+    overflow-x: hidden
+    }
+.glow-heart {
+    filter: drop-shadow(0 0 30px rgba(238, 43, 75, 0.6))
+    }
+.particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(238, 43, 75, 0.8) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none
+    }
+.gold-particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.6) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none
+    }
+.film-grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDuwhDIUdks-m2UZdtNpKM57upZXHemZzPwv8YmWNN11LkrR80TBjlwfbZaF6nVqIpfLkAu2UHhu1KtA-_Q2BLvHgJt8EyDs4YpQ3CfVWym4C_w7r56Uc8F-tTr5iQ9GHinPj8wqixEqxc-WsaCpKjPjP8LK6gtQCMhCZXPN57ych859fRM0lpDpOSjlTW39VxZBIgBwNj09Epc1E9Fi-TJj2DystlTc-wZ10bMviRXboHb3WKFqkmkWp5q1dRfJZAPOxBWkTfqbLHO)
+    }
+.heart-container {
+    position: relative;
+    transform-style: preserve-3d
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-white">
+<!-- Cinematic Background Elements -->
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+<div class="absolute inset-0 bg-vignette opacity-80"></div>
+<!-- Ambient Particles Layer -->
+<div class="absolute inset-0">
+<!-- Simulated Particles using CSS (Decorative) -->
+<div class="particle w-2 h-2 top-[20%] left-[15%] opacity-40"></div>
+<div class="particle w-1 h-1 top-[45%] left-[80%] opacity-60"></div>
+<div class="gold-particle w-3 h-3 top-[70%] left-[25%] opacity-30"></div>
+<div class="gold-particle w-1 h-1 top-[10%] left-[60%] opacity-50"></div>
+<div class="particle w-2 h-2 top-[85%] left-[85%] opacity-40"></div>
+<div class="gold-particle w-2 h-2 top-[30%] left-[40%] opacity-30"></div>
+</div>
+</div>
+<!-- Main Content Container -->
+<main class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
+<!-- Film Grain Overlay -->
+<div class="film-grain"></div>
+<!-- Top Header Navigation (Subtle) -->
+<div class="absolute top-12 left-0 w-full flex justify-center opacity-40">
+<span class="uppercase tracking-[0.5em] text-xs font-semibold">Our Eternal Journey</span>
+</div>
+<!-- Central Interactive Hero Section -->
+<div class="flex flex-col items-center text-center space-y-12 max-w-4xl w-full">
+<!-- The 3D-esque Glowing Heart -->
+<div class="heart-container group">
+<div class="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+<!-- Layered Glow Effects -->
+<div class="absolute inset-0 bg-primary/20 blur-[80px] rounded-full"></div>
+<div class="absolute inset-0 bg-primary/10 blur-[40px] rounded-full scale-125"></div>
+<!-- The Heart Image -->
+<div class="relative z-20 glow-heart scale-110">
+<svg class="w-full h-full text-primary fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+</svg>
+</div>
+<!-- Floating Particles Around Heart -->
+<div class="absolute inset-0 animate-pulse">
+<div class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full blur-[1px]"></div>
+<div class="absolute bottom-10 left-0 w-3 h-3 bg-yellow-400/60 rounded-full blur-[2px]"></div>
+<div class="absolute top-1/2 -right-4 w-1 h-1 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Cinematic Typography -->
+<div class="space-y-6">
+<p class="text-primary tracking-[0.3em] font-light text-sm md:text-base uppercase opacity-80">
+                    Every moment led to this...
+                </p>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white">
+                    Be My Valentine <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-400 to-primary">Forever?</span>
+</h1>
+</div>
+<!-- Primary CTA Button -->
+<div class="relative group mt-8">
+<!-- Button Glow Backlight -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-yellow-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+<button class="relative px-12 py-6 bg-primary hover:bg-red-600 text-white rounded-full text-xl md:text-2xl font-bold tracking-wide shadow-[0_0_40px_rgba(238,43,75,0.4)] transition-all duration-300 transform hover:scale-105 active:scale-95 flex items-center space-x-4">
+<span>Yes, Always</span>
+<i class="material-icons text-white">favorite</i>
+</button>
+</div>
+<!-- Bottom Decorative Elements -->
+<div class="pt-16 flex flex-col items-center space-y-4 opacity-30">
+<div class="h-16 w-[1px] bg-gradient-to-b from-primary to-transparent"></div>
+<p class="text-xs uppercase tracking-widest font-semibold italic">With all my love, forever yours</p>
+</div>
+</div>
+<!-- Ambient Side Content -->
+<div class="fixed bottom-12 left-12 hidden lg:block opacity-40">
+<div class="flex flex-col space-y-2">
+<p class="text-xs font-bold uppercase tracking-widest">Our Date</p>
+<p class="text-sm">February 14, 2024</p>
+</div>
+</div>
+<div class="fixed bottom-12 right-12 hidden lg:block opacity-40">
+<div class="flex flex-col items-end space-y-2">
+<p class="text-xs font-bold uppercase tracking-widest">Location</p>
+<p class="text-sm">Deep In My Heart</p>
+</div>
+</div>
+</main>
+<!-- Visual Enhancements: Light Leaks -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none z-20">
+<div class="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-primary/10 blur-[150px] rounded-full"></div>
+<div class="absolute -bottom-1/4 -right-1/4 w-1/2 h-1/2 bg-yellow-600/5 blur-[150px] rounded-full"></div>
+</div>
+<!-- Hidden Image Data Requirements -->
+<div class="hidden">
+<img alt="valentines-heart" data-alt="Cinematic glowing abstract heart centerpiece with particles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBem9jDfHxRxcFdaUtyiD47Lon2hBzwgUAKMwTbsuUK5td9SMfiaCezCaY-gv2HpuvRS_J5cFeMfj0MJekrFCCbe_O7l3TMIqEVDFa_1yg3DkB5EwKdWUT8_n7jVdSh60_jVNePuid-kwgchEudCGU4mFJJyWj2ZyboM2CA6F6rgnKGaIZPHl4YOJqaV53uqj0ZD60XNQDsUwYfmMwr2l-4X6SZ6RwcKtl64otfLySI-IxONZwfh2vvQ1rDQd-gGxStylf-2yzy-txr"/>
+</div>
+</body></html>
